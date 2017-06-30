@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a461019145384f668857adf6b328e4b8" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="12.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AmbulanceCardLogs" Width="1.5" PointX="11.25" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AmbulanceCardPregnants" Width="1.5" PointX="14" PointY="66.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AmbulanceCards" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="10.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaims" Width="1.5" PointX="15.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="15.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="13" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ClinicalExaminationActionPlaces" Width="1.5" PointX="8.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceAnotherReasons" Width="1.5" PointX="7.5" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceClinicalExaminations" Width="1.5" PointX="10.5" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceDayHospitalDates" Width="1.5" PointX="9.75" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceDayHospitals" Width="1.5" PointX="7.5" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceDiagnosis" Width="1.5" PointX="8.5" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceDiractions" Width="1.5" PointX="13.5" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceDocumentDetailAnswers" Width="1.5" PointX="15" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceDocumentDetails" Width="1.5" PointX="12.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceDocuments" Width="1.5" PointX="10.5" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceEveryYearDispancers" Width="1.5" PointX="15.25" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceHistoryDiagnosis" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceImmunizations" Width="1.5" PointX="5.25" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceInfoTemplates" Width="1.5" PointX="14.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceInjections" Width="1.5" PointX="3" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceLastDiagnosis" Width="1.5" PointX="17.25" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceMassages" Width="1.5" PointX="6" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceMedicaments" Width="1.5" PointX="11.5" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenancePrivileges" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceProcedures" Width="1.5" PointX="3" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Maintenances" Width="1.5" PointX="5.25" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceScreenings" Width="1.5" PointX="5.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceStuffs" Width="1.5" PointX="13.5" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotificationDetails" Width="1.5" PointX="3.75" PointY="90.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotificationProcedures" Width="1.5" PointX="3.75" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotifyOperations" Width="1.5" PointX="1.5" PointY="90.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotifyProcedurePropertyTypes" Width="1.5" PointX="6.75" PointY="90.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotifyProcedures" Width="1.5" PointX="1.5" PointY="85.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotifyProcedureTypes" Width="1.5" PointX="1.5" PointY="93.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotifyPropertyTypes" Width="1.5" PointX="1.5" PointY="96" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NotifyStatus" Width="1.5" PointX="1.5" PointY="107.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PatientAttachments" Width="1.5" PointX="8" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Patients" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Pregnancies" Width="1.5" PointX="16.25" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="13.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tickets" Width="1.5" PointX="3" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UserActivations" Width="1.5" PointX="15.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Areas" Width="1.5" PointX="8" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AreaTypes" Width="1.5" PointX="5.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.BloodGroups" Width="1.5" PointX="0.75" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Citizenship" Width="1.5" PointX="1.5" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ClinicalExaminationCancelReasons" Width="1.5" PointX="8.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ClinicalExaminationGroups" Width="1.5" PointX="8.25" PointY="47" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ClinicalExaminationRegistrationTypes" Width="1.5" PointX="8.25" PointY="49.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ClinicalExaminationTypes" Width="1.5" PointX="8.25" PointY="51.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DayHospitalTypes" Width="1.5" PointX="5.25" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DiagnosisCharacters" Width="1.5" PointX="1.5" PointY="80.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Diagnosises" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DiagnosisTypes" Width="1.5" PointX="1.5" PointY="75.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DiseasesCharacters" Width="1.5" PointX="6.25" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DispancerDiagnosisDetails" Width="1.5" PointX="15" PointY="53.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DispancerReasonPetitions" Width="1.5" PointX="15" PointY="56.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DocumentAnswerTemplates" Width="1.5" PointX="12.75" PointY="49.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DocumentQuestionTemplateAnswerTypes" Width="1.5" PointX="8.25" PointY="61" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DocumentQuestionTemplates" Width="1.5" PointX="10.5" PointY="61.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DocumentQuestionTemplateTypes" Width="1.5" PointX="8.25" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DocumentTemplates" Width="1.5" PointX="8.25" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DocumentTemplateType" Width="1.5" PointX="6" PointY="57.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DosageTypes" Width="1.5" PointX="5.25" PointY="47.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Employees" Width="1.5" PointX="1.5" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ExtraGenitalDiseases" Width="1.5" PointX="11.75" PointY="69.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Genders" Width="1.5" PointX="1.5" PointY="59.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.HealthStatuses" Width="1.5" PointX="8.25" PointY="54" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Holydays" Width="1.5" PointX="15.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.InjectionTypes" Width="1.5" PointX="0.75" PointY="83.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.LastDiagnosises" Width="1.5" PointX="3.75" PointY="80.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceInjectionType" Width="1.5" PointX="5.25" PointY="49.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceStatuses" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaintenanceTypes" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MaritalStatuses" Width="1.5" PointX="0.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MassageTypes" Width="1.5" PointX="3.75" PointY="42.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Medicaments" Width="1.5" PointX="9.25" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Nationalities" Width="1.5" PointX="1.5" PointY="62.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.OrgUnits" Width="1.5" PointX="1.5" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.OrgUnitTypes" Width="1.5" PointX="1.5" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PatientAddresses" Width="1.5" PointX="10.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PatientAttachmentTypes" Width="1.5" PointX="5.75" PointY="60.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PatientLivingStatuses" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PatientStatuses" Width="1.5" PointX="1.5" PointY="64.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PatientTypes" Width="1.5" PointX="1.5" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Phones" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Positions" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Priorities" Width="1.5" PointX="1.5" PointY="70.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Privileges" Width="1.5" PointX="3" PointY="99.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ProcedureTypes" Width="1.5" PointX="0.75" PointY="105" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.QueueTypes" Width="1.5" PointX="0.75" PointY="99.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ReasonPetitions" Width="1.5" PointX="0.75" PointY="102" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RhFactors" Width="1.5" PointX="0.75" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.StuffTypes" Width="1.5" PointX="11.25" PointY="47.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TicketStatuses" Width="1.5" PointX="0.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.VisitTypes" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.WorkSpecialities" Width="1.5" PointX="0.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EmployeeLeaves" Width="1.5" PointX="16" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EmployeeLeaveTypes" Width="1.5" PointX="13.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Sectors" Width="1.5" PointX="1.5" PointY="72.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.StaffLists" Width="1.5" PointX="13.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.StaffRoomBreaks" Width="1.5" PointX="13.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.StaffRoomBreakTypes" Width="1.5" PointX="11.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.StaffRooms" Width="1.5" PointX="11.5" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.StaffRoomTypes" Width="1.5" PointX="9.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.WorkSchedules" Width="1.5" PointX="16" PointY="33.875" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCardLogs_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCardLogs_dct_Employees_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCardPregnants_dbo_AmbulanceCards_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCardPregnants_dct_ExtraGenitalDiseases_ExtraGenitalDiseasesId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Pregnancies_dbo_AmbulanceCardPregnants_AmbulanceCardPregnantId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCards_dbo_Patients_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCards_dct_BloodGroups_BloodGroup_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCards_dct_MaritalStatuses_MaritalStatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCards_dct_RhFactors_RhFactorId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AmbulanceCards_dct_WorkSpecialities_WorkSpecialityId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceEveryYearDispancers_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceHistoryDiagnosis_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceImmunizations_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceLastDiagnosis_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenancePrivileges_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Maintenances_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceScreenings_dbo_AmbulanceCards_AmbulanceCardId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dbo_ClinicalExaminationActionPlaces_ClinicalExaminationActionPlaceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceAnotherReasons_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceAnotherReasons_dct_ReasonPetitions_ReasonPetitionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_ClinicalExaminationCancelReasons_ClinicalExaminationCancelReasonId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_ClinicalExaminationGroups_ClinicalExaminationGroupId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_ClinicalExaminationRegistrationTypes_ClinicalExaminationRegistrationTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_ClinicalExaminationTypes_ClinicalExaminationType_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_Diagnosises_DiagnosisId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_DiseasesCharacters_DiseasesCharacterId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_Employees_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceClinicalExaminations_dct_HealthStatuses_HealthStatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDayHospitalDates_dbo_MaintenanceDayHospitals_MaintenanceDayHospitalId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDayHospitals_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDayHospitals_dct_DayHospitalTypes_DayHospitalTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDayHospitals_dct_DosageTypes_DosageTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDayHospitals_dct_MaintenanceInjectionType_MaintenanceInjectionTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDayHospitals_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiagnosis_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiagnosis_dct_Diagnosises_DiagnosisId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiagnosis_dct_DiseasesCharacters_DiseasesCharacterId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiractions_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiractions_dct_Employees_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiractions_dct_MaintenanceTypes_MaintenanceTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiractions_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDiractions_dct_Positions_PositionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDocumentDetailAnswers_dbo_MaintenanceDocumentDetails_MaintenanceDocumentDetailId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDocumentDetailAnswers_dct_DocumentAnswerTemplates_DocumentAnswerTemplateId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDocumentDetails_dbo_MaintenanceDocuments_MaintenanceDocumentId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDocumentDetails_dct_DocumentQuestionTemplates_DocumentQuestionTemplateId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDocuments_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceDocuments_dct_DocumentTemplates_DocumentTemplateId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceEveryYearDispancers_dct_DiagnosisTypes_DiagnosisTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceEveryYearDispancers_dct_DispancerDiagnosisDetails_DispancerDiagnosisDetailId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceEveryYearDispancers_dct_DispancerReasonPetitions_DispancerReasonPetitionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceHistoryDiagnosis_dct_Diagnosises_DiagnosisId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceInjections_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceInjections_dct_InjectionTypes_InjectionTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceInjections_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceInjections_dct_TicketStatuses_StatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceLastDiagnosis_dct_DiagnosisTypes_DiagnosisTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceLastDiagnosis_dct_DispancerDiagnosisDetails_DispancerDiagnosisDetailId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceLastDiagnosis_dct_DispancerReasonPetitions_DispancerReasonPetitionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceMassages_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceMassages_dct_MassageTypes_MassageTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceMassages_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceMassages_dct_TicketStatuses_StatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceMedicaments_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceMedicaments_dct_Medicaments_MedicamentId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceMedicaments_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenancePrivileges_dct_Privileges_PrivilegeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceProcedures_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceProcedures_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceProcedures_dct_ProcedureTypes_ProcedureTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceProcedures_dct_TicketStatuses_StatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Maintenances_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Maintenances_dbo_Tickets_TicketId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Maintenances_dct_Employees_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Maintenances_dct_MaintenanceStatuses_MaintenanceStatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Maintenances_dct_MaintenanceTypes_MaintenanceTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceStuffs_dbo_Maintenances_MaintenanceId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_MaintenanceStuffs_dct_StuffTypes_StuffTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotificationDetails_dbo_NotificationProcedures_NotificationProcedureId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotificationDetails_dbo_NotifyOperations_NotifyOperationId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotificationProcedures_dbo_NotifyProcedures_NotifyProcedureId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotificationProcedures_dbo_NotifyStatus_NotifyStatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotificationProcedures_dbo_Patients_PatientId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotifyProcedurePropertyTypes_dbo_NotifyProcedures_NotifyProcedureId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotifyProcedurePropertyTypes_dbo_NotifyPropertyTypes_NotifyPropertyTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotifyProcedures_dbo_NotifyProcedureTypes_NotifyProcedureTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_NotifyProcedures_dbo_NotifyPropertyTypes_NotifyPropertyTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_PatientAttachments_dbo_Patients_PatientId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_PatientAttachments_dct_PatientAttachmentTypes_PatientAttachmentTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_Citizenship_CitizenshipId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_Employees_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_Genders_GenderId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_Nationalities_NationalityId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_PatientStatuses_PatientStatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_PatientTypes_PatientTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_dct_Priorities_PriorityId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Patients_ma_Sectors_SectorId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dbo_Patients_PatientId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_PatientAddresses_dbo_Patients_PatientId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_Phones_dbo_Patients_PatientId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Pregnancies_dct_Areas_AreaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Pregnancies_dct_Genders_GenderId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dct_Diagnosises_DiagnosisId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dct_Employees_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dct_Positions_PositionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dct_QueueTypes_QueueTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dct_ReasonPetitions_ReasonPetitionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dct_TicketStatuses_TicketStatusId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_Tickets_dct_VisitTypes_VisitTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_Areas_dct_Areas_AreaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_Areas_dct_AreaTypes_AreaTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_PatientAddresses_dct_Areas_AreaId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_DiagnosisTypes_dct_DiagnosisCharacters_DiagnosisCharacterId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_LastDiagnosises_dct_DiagnosisCharacters_DiagnosisCharacterId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_Diagnosises_dct_DiagnosisTypes_DiagnosisTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_DocumentAnswerTemplates_dct_DocumentQuestionTemplates_DocumentQuestionTemplateId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_DocumentQuestionTemplates_dct_DocumentQuestionTemplateAnswerTypes_DocumentQuestionTemplateAnswerTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_DocumentQuestionTemplates_dct_DocumentQuestionTemplateTypes_DocumentQuestionTemplateTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_DocumentQuestionTemplates_dct_DocumentTemplate_DocumentTemplateId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_DocumentTemplates_dct_DocumentTemplateType_DocumentTemplateTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_DocumentTemplates_dct_Positions_PositionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_Employees_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffLists_dct_Employees_EmployeeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_OrgUnits_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dct_OrgUnits_dct_OrgUnitTypes_OrgUnitTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffLists_dct_OrgUnits_OrgUnitId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffLists_dct_Positions_PositionId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_EmployeeLeaves_ma_EmployeeLeaveTypes_LeaveTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_EmployeeLeaves_ma_StaffLists_StaffListId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffLists_ma_Sectors_SectorId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffLists_ma_StaffRooms_StaffRoomId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_WorkSchedules_ma_StaffLists_StaffListId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffRoomBreaks_ma_StaffRoomBreakTypes_TypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffRoomBreaks_ma_StaffRooms_StaffRoomId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ma_StaffRooms_ma_StaffRoomTypes_TypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.AspNetUserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.NotifyOperationNotifyProcedures" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.NotifyProcedurePositions" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.PatientLivingStatusPatients" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.PositionEmployees" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

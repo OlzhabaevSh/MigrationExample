@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AmbulanceCards">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="MaritalStatusId" Type="int" />
+          <Property Name="WorkPlace" Type="nvarchar(max)" />
+          <Property Name="BloodGruopId" Type="int" />
+          <Property Name="RhFactorId" Type="int" />
+          <Property Name="DischargeFromHospitalDate" Type="datetime" />
+          <Property Name="Hospital" Type="nvarchar(max)" />
+          <Property Name="AllergicHistory" Type="nvarchar(max)" />
+          <Property Name="EpidemiologicalHistory" Type="nvarchar(max)" />
+          <Property Name="ReactionsFromMedicaments" Type="nvarchar(max)" />
+          <Property Name="IndividualCharacteristics" Type="nvarchar(max)" />
+          <Property Name="SpecialCases" Type="nvarchar(max)" />
+          <Property Name="SmokingInfo" Type="nvarchar(max)" />
+          <Property Name="DrinkInfo" Type="nvarchar(max)" />
+          <Property Name="WorkSpecialityId" Type="int" />
+          <Property Name="PatientPosition" Type="nvarchar(max)" />
+          <Property Name="SocialStatus" Type="nvarchar(max)" />
+          <Property Name="BloodGroup_Id" Type="int" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastUpdatedBy" Type="nvarchar" MaxLength="512" />
+          <Property Name="LastUpdatedOn" Type="datetime" />
+          <Property Name="DeathDate" Type="datetime" />
+          <Property Name="PolyclinicJoiningDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Patients">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PatientTypeId" Type="int" />
+          <Property Name="PatientStatusId" Type="int" Nullable="false" />
+          <Property Name="PriorityId" Type="int" />
+          <Property Name="IsCanServicedAtHome" Type="bit" />
+          <Property Name="Email" Type="nvarchar" MaxLength="128" />
+          <Property Name="ElectronicAgreementPath" Type="nvarchar" MaxLength="1024" />
+          <Property Name="IIN" Type="nvarchar" MaxLength="12" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="512" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="512" />
+          <Property Name="BirthDate" Type="datetime" Nullable="false" />
+          <Property Name="OrgUnitId" Type="int" />
+          <Property Name="GenderId" Type="int" />
+          <Property Name="NationalityId" Type="int" />
+          <Property Name="GlobalEntityId" Type="nvarchar" MaxLength="512" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="LastUpdatedBy" Type="nvarchar" MaxLength="512" />
+          <Property Name="LastUpdatedOn" Type="datetime" />
+          <Property Name="SectorId" Type="int" />
+          <Property Name="CitizenshipId" Type="int" />
+          <Property Name="EmployeeId" Type="int" />
+          <Property Name="RpnUID" Type="nvarchar" MaxLength="128" />
+        </EntityType>
+        <EntityType Name="Sectors">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="LastUpdatedBy" Type="nvarchar(max)" />
+          <Property Name="LastUpdatedOn" Type="datetime" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_dbo_AmbulanceCards_dbo_Patients_Id">
+          <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+          <End Role="AmbulanceCards" Type="Self.AmbulanceCards" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Patients">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AmbulanceCards">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Patients_ma_Sectors_SectorId">
+          <End Role="Sectors" Type="Self.Sectors" Multiplicity="0..1" />
+          <End Role="Patients" Type="Self.Patients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sectors">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Patients">
+              <PropertyRef Name="SectorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище ModelContainer">
+          <EntitySet Name="AmbulanceCards" EntityType="Self.AmbulanceCards" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Patients" EntityType="Self.Patients" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sectors" EntityType="Self.Sectors" Schema="ma" store:Type="Tables" />
+          <AssociationSet Name="FK_dbo_AmbulanceCards_dbo_Patients_Id" Association="Self.FK_dbo_AmbulanceCards_dbo_Patients_Id">
+            <End Role="Patients" EntitySet="Patients" />
+            <End Role="AmbulanceCards" EntitySet="AmbulanceCards" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Patients_ma_Sectors_SectorId" Association="Self.FK_dbo_Patients_ma_Sectors_SectorId">
+            <End Role="Sectors" EntitySet="Sectors" />
+            <End Role="Patients" EntitySet="Patients" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AmbulanceCards">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="MaritalStatusId" Type="Int32" />
+          <Property Name="WorkPlace" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BloodGruopId" Type="Int32" />
+          <Property Name="RhFactorId" Type="Int32" />
+          <Property Name="DischargeFromHospitalDate" Type="DateTime" Precision="3" />
+          <Property Name="Hospital" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AllergicHistory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EpidemiologicalHistory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReactionsFromMedicaments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IndividualCharacteristics" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SpecialCases" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SmokingInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DrinkInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WorkSpecialityId" Type="Int32" />
+          <Property Name="PatientPosition" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SocialStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BloodGroup_Id" Type="Int32" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastUpdatedBy" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="LastUpdatedOn" Type="DateTime" Precision="3" />
+          <Property Name="DeathDate" Type="DateTime" Precision="3" />
+          <Property Name="PolyclinicJoiningDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Patients" Relationship="Self.FK_dbo_AmbulanceCards_dbo_Patients_Id" FromRole="AmbulanceCards" ToRole="Patients" />
+        </EntityType>
+        <EntityType Name="Patients">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PatientTypeId" Type="Int32" />
+          <Property Name="PatientStatusId" Type="Int32" Nullable="false" />
+          <Property Name="PriorityId" Type="Int32" />
+          <Property Name="IsCanServicedAtHome" Type="Boolean" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ElectronicAgreementPath" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="IIN" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OrgUnitId" Type="Int32" />
+          <Property Name="GenderId" Type="Int32" />
+          <Property Name="NationalityId" Type="Int32" />
+          <Property Name="GlobalEntityId" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="LastUpdatedBy" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="LastUpdatedOn" Type="DateTime" Precision="3" />
+          <Property Name="SectorId" Type="Int32" />
+          <Property Name="CitizenshipId" Type="Int32" />
+          <Property Name="EmployeeId" Type="Int32" />
+          <Property Name="RpnUID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AmbulanceCards" Relationship="Self.FK_dbo_AmbulanceCards_dbo_Patients_Id" FromRole="Patients" ToRole="AmbulanceCards" />
+          <NavigationProperty Name="Sectors" Relationship="Self.FK_dbo_Patients_ma_Sectors_SectorId" FromRole="Patients" ToRole="Sectors" />
+        </EntityType>
+        <EntityType Name="Sectors">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastUpdatedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LastUpdatedOn" Type="DateTime" Precision="3" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Patients" Relationship="Self.FK_dbo_Patients_ma_Sectors_SectorId" FromRole="Sectors" ToRole="Patients" />
+        </EntityType>
+        <Association Name="FK_dbo_AmbulanceCards_dbo_Patients_Id">
+          <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+          <End Role="AmbulanceCards" Type="Self.AmbulanceCards" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Patients">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AmbulanceCards">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Patients_ma_Sectors_SectorId">
+          <End Role="Sectors" Type="Self.Sectors" Multiplicity="0..1" />
+          <End Role="Patients" Type="Self.Patients" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sectors">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Patients">
+              <PropertyRef Name="SectorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PatientRepo" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AmbulanceCards" EntityType="Self.AmbulanceCards" />
+          <EntitySet Name="Patients" EntityType="Self.Patients" />
+          <EntitySet Name="Sectors" EntityType="Self.Sectors" />
+          <AssociationSet Name="FK_dbo_AmbulanceCards_dbo_Patients_Id" Association="Self.FK_dbo_AmbulanceCards_dbo_Patients_Id">
+            <End Role="Patients" EntitySet="Patients" />
+            <End Role="AmbulanceCards" EntitySet="AmbulanceCards" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Patients_ma_Sectors_SectorId" Association="Self.FK_dbo_Patients_ma_Sectors_SectorId">
+            <End Role="Sectors" EntitySet="Sectors" />
+            <End Role="Patients" EntitySet="Patients" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="PatientRepo">
+          <EntitySetMapping Name="AmbulanceCards">
+            <EntityTypeMapping TypeName="Model.AmbulanceCards">
+              <MappingFragment StoreEntitySet="AmbulanceCards">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MaritalStatusId" ColumnName="MaritalStatusId" />
+                <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+                <ScalarProperty Name="BloodGruopId" ColumnName="BloodGruopId" />
+                <ScalarProperty Name="RhFactorId" ColumnName="RhFactorId" />
+                <ScalarProperty Name="DischargeFromHospitalDate" ColumnName="DischargeFromHospitalDate" />
+                <ScalarProperty Name="Hospital" ColumnName="Hospital" />
+                <ScalarProperty Name="AllergicHistory" ColumnName="AllergicHistory" />
+                <ScalarProperty Name="EpidemiologicalHistory" ColumnName="EpidemiologicalHistory" />
+                <ScalarProperty Name="ReactionsFromMedicaments" ColumnName="ReactionsFromMedicaments" />
+                <ScalarProperty Name="IndividualCharacteristics" ColumnName="IndividualCharacteristics" />
+                <ScalarProperty Name="SpecialCases" ColumnName="SpecialCases" />
+                <ScalarProperty Name="SmokingInfo" ColumnName="SmokingInfo" />
+                <ScalarProperty Name="DrinkInfo" ColumnName="DrinkInfo" />
+                <ScalarProperty Name="WorkSpecialityId" ColumnName="WorkSpecialityId" />
+                <ScalarProperty Name="PatientPosition" ColumnName="PatientPosition" />
+                <ScalarProperty Name="SocialStatus" ColumnName="SocialStatus" />
+                <ScalarProperty Name="BloodGroup_Id" ColumnName="BloodGroup_Id" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+                <ScalarProperty Name="LastUpdatedOn" ColumnName="LastUpdatedOn" />
+                <ScalarProperty Name="DeathDate" ColumnName="DeathDate" />
+                <ScalarProperty Name="PolyclinicJoiningDate" ColumnName="PolyclinicJoiningDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patients">
+            <EntityTypeMapping TypeName="Model.Patients">
+              <MappingFragment StoreEntitySet="Patients">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PatientTypeId" ColumnName="PatientTypeId" />
+                <ScalarProperty Name="PatientStatusId" ColumnName="PatientStatusId" />
+                <ScalarProperty Name="PriorityId" ColumnName="PriorityId" />
+                <ScalarProperty Name="IsCanServicedAtHome" ColumnName="IsCanServicedAtHome" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ElectronicAgreementPath" ColumnName="ElectronicAgreementPath" />
+                <ScalarProperty Name="IIN" ColumnName="IIN" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="OrgUnitId" ColumnName="OrgUnitId" />
+                <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+                <ScalarProperty Name="NationalityId" ColumnName="NationalityId" />
+                <ScalarProperty Name="GlobalEntityId" ColumnName="GlobalEntityId" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+                <ScalarProperty Name="LastUpdatedOn" ColumnName="LastUpdatedOn" />
+                <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+                <ScalarProperty Name="CitizenshipId" ColumnName="CitizenshipId" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="RpnUID" ColumnName="RpnUID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sectors">
+            <EntityTypeMapping TypeName="Model.Sectors">
+              <MappingFragment StoreEntitySet="Sectors">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+                <ScalarProperty Name="LastUpdatedOn" ColumnName="LastUpdatedOn" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
